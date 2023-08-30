@@ -24,12 +24,12 @@
         flex: 1;
       }
 
-      .spacing {
-        height: 20px;
-      }
       .image {
-        height: 230px;
-        width: 230px;
+        height: 250px;
+        width: 250px;
+      }
+      .input {
+        border: 1px solid rgb(167, 167, 167);
       }
     </style>
   </head>
@@ -37,12 +37,15 @@
   <body>
     <div class="addResume">
       <h1>채용공고 등록</h1>
-      <div style="margin-top: 30px;">
-        <h4>공고 제목</h4>
-      </div>
-      <div class="card">
-        <div class="card-body">Basic card</div>
-      </div>
+      <h4 class="mt-4">공고 제목</h4>
+
+      <input
+        type="text"
+        class="form-control input"
+        id="recruitTitle"
+        placeholder="Title"
+      />
+
       <!--이미지 파일 삽입
     이미지파일과 이름, 이메일, 전화번호 나란히 정렬-->
 
@@ -51,40 +54,48 @@
           <img class="image" src="/images/너굴맨.jpg" alt="프로필 사진" />
         </div>
         <div class="info">
-          <div style="margin-top: 20px">
-            <h4>회사명</h4>
-          </div>
-          <div class="card">회사명
-          </div>
-          <div style="margin-top: 20px">
-            <h4>이메일</h4>
-          </div>
-          <div class="card">
-            이메일
-          </div>
-          <div style="margin-top: 20px">
-            <h4>전화번호</h4>
-          </div>
-          <div class="card">
-            전화번호
-          </div>
+          <h4 class="mt-3">회사명</h4>
+          <input
+            type="text"
+            class="form-control input"
+            id="coName"
+            placeholder="coName"
+          />
+          <h4 class="mt-3">이메일</h4>
+          <input
+            type="text"
+            class="form-control input"
+            id="coEmail"
+            placeholder="coEmail"
+          />
+          <h4 class="mt-3">전화번호</h4>
+          <input
+            type="text"
+            class="form-control input"
+            id="coCallNumber"
+            placeholder="coCallNumber"
+          />
         </div>
       </div>
 
       <hr />
-      <h4>기업정보</h4>
-      <div class="card" style="height: 200px">
-        너굴맨이 처리했으니 안심하라구!
-      </div>
-      <div style="margin-top: 30px">
-        <h4>지역</h4>
-      </div>
-      <!--지역체크박스 필요-->
+      <h4 class="mt-4">기업정보</h4>
+      <input
+        type="text"
+        class="form-control input"
+        id="coInfo"
+        placeholder="coInfo"
+      />
+      <h4 class="mt-4">지역</h4>
+      <input
+        type="text"
+        class="form-control input"
+        id="place"
+        placeholder="이 자리는 체크박스 자리야!"
+      />
 
       <hr />
-      <div style="margin-top: 30px">
-        <h4>채용직무</h4>
-      </div>
+      <h4 class="mt-4">채용직무</h4>
       <p>선택한 직무: <span id="selectedDevOptions">None</span></p>
       <div class="dropdown">
         <button
@@ -155,9 +166,7 @@
           <!-- 나머지 직무 항목들도 동일하게 추가 -->
         </ul>
       </div>
-      <div style="margin-top: 30px">
-        <h4>기술 스택</h4>
-      </div>
+      <h4 class="mt-4">기술 스택</h4>
       <p>필요한 기술: <span id="selectedTechOptions">None</span></p>
       <div class="dropdown">
         <button
@@ -231,21 +240,34 @@
       <hr />
       <div class="container">
         <div class="row">
-          <div class="col-lg-6" style="margin-top: 30px">
+          <div class="col-lg-6 mt-4">
             <h4>모집인원</h4>
-            <div class="card">n명</div>
-            <div style="margin-top: 30px">
-              <h4>급여</h4>
-            </div>
-            <div class="card">연봉</div>
+            <input
+              type="text"
+              class="form-control input"
+              placeholder="모집 인원을 기입해주세요"
+            />
+            <h4 class="mt-4">급여</h4>
+            <input
+              type="text"
+              class="form-control input"
+              placeholder="연봉,급여를 등록해주세요"
+            />
           </div>
-          <div class="col-lg-6" style="margin-top: 30px">
+          <div class="col-lg-6 mt-4">
             <h4>기간</h4>
-            <div class="card">Timestamp</div>
-            <div style="margin-top: 30px">
-              <h4>자격요건</h4>
-            </div>
-            <div class="card">사지멀쩡한 자</div>
+            <input
+              type="text"
+              class="form-control input"
+              placeholder="모집 기간을 등록해주세요"
+            />
+            <h4 class="mt-4">자격요건</h4>
+            <input
+              type="text"
+              class="form-control input"
+              id="place"
+              placeholder="사지멀쩡한 자"
+            />
           </div>
         </div>
       </div>
@@ -255,6 +277,7 @@
         </button>
       </div>
     </div>
+
     <script>
       function setupDropdown(dropdownId, outputId) {
         var dropdown = document.querySelector(`#${dropdownId}`);
