@@ -1,0 +1,139 @@
+/* 개인고객 회원정보보기 */
+.frame {
+    margin-top: 50px;
+    margin-inline: 200px;
+}
+
+.user_image_box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.user_image {
+    margin: 20px;
+    text-align: center;
+}
+
+.btn {
+    line-height: 1;
+    width: 100px;
+    height: 30px;
+}
+
+.link {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home {
+    flex: 0;
+}
+
+.small_title {
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+.apply_button {
+    justify-self: center;
+    height: 30px;
+    width: 100px;
+}
+
+.pic_update_button {
+    width: 100px;
+}
+
+.recommand_recruit {
+    height: 300px;
+    width: 300px;
+}
+
+.recruit_image_box {
+    width: 275px;
+    height: 180px;
+}
+
+.custom_checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.custom_form_checkbox {
+    margin: 20px;
+    justify-content: center;
+}
+
+.add_btn {
+    width: 116px;
+    height: 40px;
+}
+
+.apply_button {
+    justify-self: center;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(142, 213, 226);
+}
+
+.pic_update_button {
+    width: 100px;
+}
+
+/* 이력서 작성 */
+
+
+.resume_profil_image {
+    width: auto;
+    /* 너비 강제 조절 */
+    height: auto;
+    /* 높이 자동 조절 */
+    margin-top: 20px;
+    /* 위쪽 간격 */
+    margin-right: 20px;
+    /* 오른쪽 간격 */
+
+}
+
+.info {
+    flex: 1;
+}
+
+.spacing {
+    height: 20px;
+}
+
+.image {
+    height: 230px;
+    width: 230px;
+}
+
+/* 이벤트 배너 페이지 */
+.event-title {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: 720px;
+}
+
+.event-image-box {
+    margin-top: 20px;
+    margin-left: 857px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.event-banner {
+    width: 900px;
+    height: 130px;
+    border-radius: 25px;
+}
